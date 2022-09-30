@@ -1,0 +1,30 @@
+﻿@model List<PolicyManager.Models.Domain.Policies>
+
+@{
+}
+
+<h1>Policies</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Premium</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var policies in Model)
+		{
+			<tr>
+				<td>@policies.Id</td>
+				<td>@policies.Name</td>
+				<td>@policies.Description</td>
+				<td>@policies.Premium</td>
+				<td><a href="Policies/View/@policies.Id">View</a></td>
+			</tr>
+		}
+	</tbody>
+</table>

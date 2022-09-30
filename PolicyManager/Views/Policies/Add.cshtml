@@ -1,0 +1,20 @@
+﻿@model PolicyManager.Models.AddPolicyViewModel
+@{
+}
+<h1>Add Policy</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Policy Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Description</label>
+        <input type="text" class="form-control" asp-for="Description">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Premium</label>
+        <input type="number" class="form-control" asp-for="Premium">
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
